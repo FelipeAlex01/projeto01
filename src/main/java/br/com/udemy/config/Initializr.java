@@ -1,4 +1,4 @@
-package br.com.udemy.initializr;
+package br.com.udemy.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
@@ -24,7 +24,7 @@ public class Initializr implements ApplicationListener<ContextRefreshedEvent> {
 
 		this.repository.save(user);
 
-		System.out.println(this.repository.findAll());
+		//System.out.println(this.repository.findByName("Felipe"));
 
 	}
 }
